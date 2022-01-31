@@ -6,9 +6,9 @@ export default function City({ skylineId,
 
   return (
     <div className="city">
-      <img src={`skyline-${skylineId}.jpeg`} alt="" />
-      <img src={`waterfront-${waterfrontId}.jpeg`} alt="" />
-      <img src={`castle-${castleId}.jpeg`} alt="" />
+      <img src={`skyline-${skylineId}.jpeg`} alt="skyline" />
+      <img src={`waterfront-${waterfrontId}.jpeg`} alt="waterfront" />
+      <img src={`castle-${castleId}.jpeg`} alt="castle" />
     </div>
   );
 }

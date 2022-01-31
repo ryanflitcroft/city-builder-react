@@ -4,6 +4,7 @@ import SkylineDropdown from './SkylineDropdown';
 import WaterfrontDropdown from './WaterfrontDropdown';
 import CastleDropdown from './CastleDropdown';
 import SloganForm from './SloganForm';
+import Dropdowns from './Dropdowns';
 
 export default function CityForm({ setCityName,
   setSkylineId,
@@ -15,11 +16,9 @@ export default function CityForm({ setCityName,
   return (
     <>
       <CityNameInput setCityName={setCityName} />
-      <section className='dropdowns'>
-        <SkylineDropdown setSkylineId={setSkylineId} />
-        <WaterfrontDropdown setWaterfrontId={setWaterfrontId} />
-        <CastleDropdown setCastleId={setCastleId} />
-      </section>
+      <Dropdowns setSkylineId={setSkylineId}
+        setWaterfrontId={setWaterfrontId}
+        setCastleId={setCastleId} />
       <SloganForm citySlogans={citySlogans}
         setCitySlogans={setCitySlogans} />
     </>
