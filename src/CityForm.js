@@ -1,8 +1,5 @@
 import React from 'react';
 import CityNameInput from './CityNameInput';
-import SkylineDropdown from './SkylineDropdown';
-import WaterfrontDropdown from './WaterfrontDropdown';
-import CastleDropdown from './CastleDropdown';
 import SloganForm from './SloganForm';
 import Dropdowns from './Dropdowns';
 
