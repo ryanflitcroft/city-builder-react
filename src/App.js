@@ -1,12 +1,8 @@
 import { useState } from 'react';
 import './App.css';
-import SkylineDropdown from './SkylineDropdown';
-import WaterfrontDropdown from './WaterfrontDropdown';
-import CastleDropdown from './CastleDropdown';
 import SloganList from './SloganList';
-import SloganForm from './SloganForm';
-import CityNameInput from './CityNameInput';
-import City from './City';
+import CityDisplay from './CityDisplay';
+import CityForm from './CityForm';
 
 function App() {
 
@@ -18,21 +14,16 @@ function App() {
 
   return (
     <div className="App">
-
-      <City skylineId={skylineId}
+      <CityDisplay skylineId={skylineId}
         waterfrontId={waterfrontId}
-        castleId={castleId} />
-      <h1>
-        Welcome to beautiful {cityName}!
-      </h1>
+        castleId={castleId} 
+        cityName={cityName} />
       <div className='bottom'>
-        <CityNameInput setCityName={setCityName} />
-        <section className='dropdowns'>
-          <SkylineDropdown setSkylineId={setSkylineId} />
-          <WaterfrontDropdown setWaterfrontId={setWaterfrontId} />
-          <CastleDropdown setCastleId={setCastleId} />
-        </section>
-        <SloganForm citySlogans={citySlogans}
+        <CityForm setCityName={setCityName} 
+          setSkylineId={setSkylineId}
+          setWaterfrontId={setWaterfrontId}
+          setCastleId={setCastleId}
+          citySlogans={citySlogans}
           setCitySlogans={setCitySlogans} />
         <SloganList citySlogans={citySlogans} />
       </div>
