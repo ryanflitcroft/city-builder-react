@@ -46,6 +46,7 @@ function App() {
         <SloganForm citySlogans={citySlogans}
           setCitySlogans={setCitySlogans} />
         {/* here, the SloganList component takes the array of slogans that lives in state */}
+        <SloganList citySlogans={citySlogans} />
       </div>
     </div>
   );
