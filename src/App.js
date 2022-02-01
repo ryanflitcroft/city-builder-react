@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import './App.css';
-import SloganList from './CityDisplay/SloganList';
 import CityDisplay from './CityDisplay/CityDisplay';
 import CityForm from './CityForm/CityForm';
 
@@ -17,16 +16,14 @@ function App() {
       <CityDisplay skylineId={skylineId}
         waterfrontId={waterfrontId}
         castleId={castleId} 
-        cityName={cityName} />
-      <div className='bottom'>
-        <CityForm setCityName={setCityName} 
-          setSkylineId={setSkylineId}
-          setWaterfrontId={setWaterfrontId}
-          setCastleId={setCastleId}
-          citySlogans={citySlogans}
-          setCitySlogans={setCitySlogans} />
-        <SloganList citySlogans={citySlogans} />
-      </div>
+        cityName={cityName}
+        citySlogans={citySlogans} />
+      <CityForm setCityName={setCityName} 
+        setSkylineId={setSkylineId}
+        setWaterfrontId={setWaterfrontId}
+        setCastleId={setCastleId}
+        citySlogans={citySlogans}
+        setCitySlogans={setCitySlogans} />
     </div>
   );
 }

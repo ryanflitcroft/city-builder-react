@@ -11,13 +11,16 @@ export default function CityForm({ setCityName,
   setCitySlogans
 }) {
   return (
-    <>
-      <CityNameInput setCityName={setCityName} />
-      <Dropdowns setSkylineId={setSkylineId}
-        setWaterfrontId={setWaterfrontId}
-        setCastleId={setCastleId} />
+    <section>
+      <fieldset>
+        <legend>Design Your Postcard</legend>
+        <CityNameInput setCityName={setCityName} />
+        <Dropdowns setSkylineId={setSkylineId}
+          setWaterfrontId={setWaterfrontId}
+          setCastleId={setCastleId} />
+      </fieldset>
       <SloganForm citySlogans={citySlogans}
         setCitySlogans={setCitySlogans} />
-    </>
+    </section>
   );
 }

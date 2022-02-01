@@ -2,9 +2,9 @@ import React from 'react';
 
 export default function CityNameInput({ setCityName }) {
   return (
-    <section>
-      What is your city name?
-      <input onChange={(e) => setCityName(e.target.value)} />
-    </section>
+    <>
+      <label htmlFor='cityName'>What is your city name?</label>
+      <input name='cityName' onChange={(e) => setCityName(e.target.value)} />
+    </>
   );
 }

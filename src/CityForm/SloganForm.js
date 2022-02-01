@@ -9,12 +9,12 @@ export default function SloganForm({ citySlogans, setCitySlogans }) {
   }
 
   return (
-    <section>
+    <>
       <form onSubmit={handleSubmit}>
-        Add a slogan to the list!
-        <input onChange={(e) => setSloganInput(e.target.value)} value={sloganInput} />
+        <label htmlFor='slogans'>Add a slogan to the list!</label>
+        <input name='slogans' onChange={(e) => setSloganInput(e.target.value)} value={sloganInput} />
         <button>Submit</button>
       </form>
-    </section>
+    </>
   );
 }

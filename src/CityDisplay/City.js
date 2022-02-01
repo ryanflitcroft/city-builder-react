@@ -5,7 +5,7 @@ export default function City({ skylineId,
   castleId }) {
 
   return (
-    <div className="city">
+    <div>
       <img src={`skyline-${skylineId}.jpeg`} alt="skyline" />
       <img src={`waterfront-${waterfrontId}.jpeg`} alt="waterfront" />
       <img src={`castle-${castleId}.jpeg`} alt="castle" />

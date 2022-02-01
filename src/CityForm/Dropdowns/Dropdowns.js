@@ -7,24 +7,27 @@ export default function Dropdowns({ setSkylineId,
   setWaterfrontId,
   setCastleId }) {
 
-  function addSelectOption(opt1, opt2, opt3, setId) {
+  function addSelectOption(type, opt1, opt2, opt3, setId) {
     return (
-      <select onChange={(e) => setId(e.target.value)}>
-        <option value="1">{opt1}</option>
-        <option value="2">{opt2}</option>
-        <option value="3">{opt3}</option>
-      </select>
+      <>
+        <label htmlFor={type}>Select a {type}:</label>
+        <select onChange={(e) => setId(e.target.value)}>
+          <option value="1">{opt1}</option>
+          <option value="2">{opt2}</option>
+          <option value="3">{opt3}</option>
+        </select>
+      </>
     );
   }
 
   return (
-    <section className='dropdowns'>
+    <>
       <SkylineDropdown addSelectOption={addSelectOption}
         setSkylineId={setSkylineId} />
       <WaterfrontDropdown addSelectOption={addSelectOption}
         setWaterfrontId={setWaterfrontId} />
       <CastleDropdown addSelectOption={addSelectOption}
         setCastleId={setCastleId} />
-    </section>
+    </>
   );
 }
