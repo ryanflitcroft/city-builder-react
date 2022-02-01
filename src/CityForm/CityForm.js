@@ -1,7 +1,7 @@
 import React from 'react';
-import CityNameInput from './CityNameInput';
-import SloganForm from './SloganForm';
-import Dropdowns from './Dropdowns';
+import CityNameInput from '../CityForm/CityNameInput';
+import SloganForm from '../CityForm/SloganForm';
+import Dropdowns from '../CityForm/Dropdowns/Dropdowns';
 
 export default function CityForm({ setCityName,
   setSkylineId,

@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import './App.css';
-import SloganList from './SloganList';
-import CityDisplay from './CityDisplay';
-import CityForm from './CityForm';
+import SloganList from './CityDisplay/SloganList';
+import CityDisplay from './CityDisplay/CityDisplay';
+import CityForm from './CityForm/CityForm';
 
 function App() {
 
